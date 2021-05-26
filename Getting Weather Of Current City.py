@@ -37,7 +37,7 @@ city=r['city']
 
                         #Getting the weather condition using city name
 
-r=requests.get('http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=1384252fb54fcbae2fd7d72d55b07bbc&units=metric').json()
+r=requests.get('http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=## Your API KEY ##&units=metric').json()
 print(r)
 temp=r['main']['temp']
 desc=r['weather'][0]['description']
